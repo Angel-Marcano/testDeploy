@@ -26,9 +26,9 @@ jobs:
         run: find build/ -print
 
       - name: 📂 sincronizando archivos con servidor
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: elnoob3100
         with:
           server: ftp.residencialosrobles.com
-          username: deploy@testsub.residencialosrobles.com
-          password: angel1997MASFINO.
+          username: ${{secrets.ftp_user_metalsigma}}
+          password: ${{secrets.ftp_password_metalsigma}}
           local-dir: build/

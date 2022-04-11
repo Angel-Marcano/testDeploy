@@ -6,7 +6,7 @@ on:
 name: 🚀 AutoDeploy Metalsigma
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Pasos
     runs-on: ubuntu-18.04
     steps:
       - name: 🚚 Get latest code

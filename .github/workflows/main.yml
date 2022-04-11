@@ -3,7 +3,7 @@ on:
     branches:
       - master
 
-name: 🚀 AutoDeploy Metalsigma
+name: 🚀 AutoDeploy Metalsigmaa
 jobs:
   web-deploy:
     name: 🎉 Pasos

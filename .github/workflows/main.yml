@@ -31,4 +31,4 @@ jobs:
           server: ftp.residencialosrobles.com
           username: deploy@testsub.residencialosrobles.com
           password: angel1997MASFINO.
-          local-dir: /
+          local-dir: build/

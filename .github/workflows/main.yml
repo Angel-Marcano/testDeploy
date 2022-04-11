@@ -25,8 +25,8 @@ jobs:
       - name: listando archivos de salida
         run: find build/ -print
 
-      - name: 📂 sincronizando archivos con servidor
-        uses: elnoob3100
+      - name: 📂 sincronizando archivos con servw
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.residencialosrobles.com
           username: deploy@testsub.residencialosrobles.com

@@ -3,7 +3,7 @@ on:
     branches:
       - master
 
-name: 🚀 Deploy website on push
+name: 🚀 AutoDeploy Metalsigma
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,15 +17,15 @@ jobs:
         with:
           node-version: "14"
 
-      - name: 🔨 Build Project
+      - name: 🔨 realizando el build
         run: |
           npm install
           npm run build
 
-      - name: List output files
+      - name: listando archivos de salida
         run: find build/ -print
 
-      - name: 📂 Sync files
+      - name: 📂 sincronizando archivos con servidor
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.residencialosrobles.com

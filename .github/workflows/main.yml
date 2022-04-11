@@ -25,10 +25,10 @@ jobs:
       - name: listando archivos de salida
         run: find build/ -print
 
-      - name: 📂 sincronizando archivos con servw
+      - name: 📂 sincronizando archivos con serve
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.residencialosrobles.com
-          username: deploy@testsub.residencialosrobles.com
-          password: angel1997MASFINO.
+          username: ${{secrets.FTP_USER_METALSIGMA}}
+          password: ${{secrets.FTP_PASSWORD_METALSIGMA}}
           local-dir: build/
